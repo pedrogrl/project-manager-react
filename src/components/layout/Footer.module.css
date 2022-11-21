@@ -1,0 +1,32 @@
+.footer{
+  background-color: #222;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+}
+
+.ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.ul li{
+  margin: 0 1rem
+}
+.ul li:hover{
+  color: #ffbb33;
+}
+.ul li svg{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer p{
+  margin-top: 2rem;
+  cursor: default;
+  user-select: none;
+}
+.footer p span{
+  font-weight: bold;
+  color: #ffbb33;
+}
