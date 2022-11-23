@@ -21,7 +21,7 @@ export default function NewProject() {
     })
       .then((data) => data.json())
       .then((newData) => {
-        navigate("/projects");
+        navigate("/projects", { state: {message: 'New Project created sucessfully!'}} );
       })
       .catch((error) => console.log(error));
   }
