@@ -2,25 +2,128 @@
   "projects": [
     {
       "name": "test",
-      "budget": "1",
-      "category": {
-        "id": "1",
-        "name": "Development"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "New Project2",
-      "budget": "1",
+      "budget": "1000",
       "category": {
         "id": "2",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
-      "id": 2
+      "cost": 112,
+      "services": [
+        {
+          "name": "test",
+          "cost": "desc",
+          "id": "bdcdc6c9-a885-4f35-8234-64141f09c3dc"
+        },
+        {
+          "cost": "5",
+          "id": "9b3a29f9-a6c8-4547-af54-ba7db166c410"
+        },
+        {
+          "cost": "1",
+          "id": "2c64d428-72fc-4b94-b1a3-bd92ac595f49"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "1",
+          "id": "d8456587-c838-4c7d-8983-bf0ed5dbb705"
+        },
+        {
+          "cost": "20",
+          "id": "78e1aea7-93d2-4f95-ae89-df2dded281d3"
+        },
+        {
+          "cost": "3",
+          "id": "c6a8cf71-feb9-4388-83a3-c6562c84ed54"
+        },
+        {
+          "cost": "5",
+          "id": "fd6bb9a1-aec8-4e45-8d90-cd4ab518422a"
+        },
+        {
+          "cost": "12",
+          "id": "e8c6f00d-a3a5-41ce-8404-a5cd79e49631"
+        }
+      ],
+      "id": 1
     }
   ],
   "categories": [
