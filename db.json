@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "test",
-      "budget": "12333",
+      "budget": "1",
       "category": {
         "id": "1",
         "name": "Development"
@@ -12,8 +12,8 @@
       "id": 1
     },
     {
-      "budget": "123",
-      "name": "test2",
+      "name": "New Project",
+      "budget": "1111",
       "category": {
         "id": "2",
         "name": "Design"
@@ -21,17 +21,6 @@
       "cost": 0,
       "services": [],
       "id": 2
-    },
-    {
-      "name": "Novo Projeto",
-      "budget": "123",
-      "category": {
-        "id": "3",
-        "name": "Planning"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
     }
   ],
   "categories": [
