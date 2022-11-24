@@ -1,17 +1,17 @@
 .projectDetails {
   padding: 2rem;
 }
-.projectDetails h1,
-.projectDetails h2,
-.projectDetails p {
-  margin-bottom: 0.5rem; 
-}
 .projectDetails h1 {
   font-size: 2.8rem;
   background-color: #222;
   color: #ffbb33;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem .9rem;
+  margin-bottom: 1rem;
 }
+.projectDetails p {
+  margin-bottom: 0.5rem; 
+}
+
 .projectDetails span {
   font-weight: bold;
 }
@@ -25,6 +25,8 @@
   max-height: 40px;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
+  /* font-weight: 500; */
 }
 .projectDetails button:hover {
   color: #ffbb33;

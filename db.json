@@ -12,8 +12,8 @@
       "id": 1
     },
     {
-      "name": "New Project",
-      "budget": "1111",
+      "name": "New Project2",
+      "budget": "1",
       "category": {
         "id": "2",
         "name": "Design"
