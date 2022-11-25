@@ -9,8 +9,8 @@ import Loading from "../layout/Loading";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
-  const [isLoading, setIsLoading] = useState(true)
-  const [projectMessage, setProjectMessage] = useState('')
+  const [isLoading, setIsLoading] = useState(true);
+  const [projectMessage, setProjectMessage] = useState("");
 
   let location = useLocation();
   let message = "";
@@ -19,20 +19,21 @@ export default function Projects() {
   }
 
   useEffect(() => {
-    setTimeout(() => { // carregamento fake
+    setTimeout(() => {
+      // carregamento fake
       fetch("http://localhost:5000/projects", {
-      method: "GET",
-      headers: {
-        "Content-type": "application/json",
-      },
-    })
-      .then((data) => data.json())
-      .then((newData) => {
-        setProjects(newData);
-        setIsLoading(false)
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+        },
       })
-      .catch((err) => console.log(err));
-    }, 300); 
+        .then((data) => data.json())
+        .then((newData) => {
+          setProjects(newData);
+          setIsLoading(false);
+        })
+        .catch((err) => console.log(err));
+    }, 300);
   }, []);
 
   return (
@@ -57,24 +58,25 @@ export default function Projects() {
             />
           ))}
 
-        {isLoading && (<Loading/>)}
-        {!isLoading && projects.length === 0 && (
-          <p>No projects here!</p>
-        )}
+        {isLoading && <Loading />}
+        {!isLoading && projects.length === 0 && <p>No projects here!</p>}
       </Container>
     </div>
   );
 
-  function removeProject(id){
+  function removeProject(id) {
     fetch(`http://localhost:5000/projects/${id}`, {
-      method: 'DELETE',
+      method: "DELETE",
       headers: {
-        'Content-type': 'application/json'
-      }
-    }).then(data => data.json()).then(() => {
-      let filtered = projects.filter((project) => project.id !== id)
-      setProjects(filtered)
-      setProjectMessage('Project deleted sucessfully!')
-    }).catch(err => console.log(err))
+        "Content-type": "application/json",
+      },
+    })
+      .then((data) => data.json())
+      .then(() => {
+        let filtered = projects.filter((project) => project.id !== id);
+        setProjects(filtered);
+        setProjectMessage("Project deleted sucessfully!");
+      })
+      .catch((err) => console.log(err));
   }
 }

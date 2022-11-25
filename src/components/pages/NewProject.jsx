@@ -4,7 +4,6 @@ import styles from "./NewProject.module.css";
 import { useNavigate } from "react-router-dom";
 
 export default function NewProject() {
-
   const navigate = useNavigate();
 
   function newPost(project) {
@@ -21,7 +20,9 @@ export default function NewProject() {
     })
       .then((data) => data.json())
       .then((newData) => {
-        navigate("/projects", { state: {message: 'New Project created sucessfully!'}} );
+        navigate("/projects", {
+          state: { message: "New Project created sucessfully!" },
+        });
       })
       .catch((error) => console.log(error));
   }

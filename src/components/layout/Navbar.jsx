@@ -19,10 +19,10 @@ export default function Navbar() {
             <Link to={"/projects"}>Projects</Link>
           </li>
           <li>
-            <Link to={"/company"}>Company</Link>
+            <Link>Company</Link>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <Link>Contact</Link>
           </li>
         </ul>
       </Container>

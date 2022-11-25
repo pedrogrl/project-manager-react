@@ -4,8 +4,12 @@ import Select from "../form/Select";
 import SubmitButton from "../form/SubmitButton";
 import styles from "./ProjectForm.module.css";
 
-export default function ProjectForm({ handleSubmit, btnText, btnWidth, projectData }) {
-  
+export default function ProjectForm({
+  handleSubmit,
+  btnText,
+  btnWidth,
+  projectData,
+}) {
   const [project, setProject] = useState(projectData || {});
   const [categories, setCategories] = useState([]);
 
@@ -18,27 +22,10 @@ export default function ProjectForm({ handleSubmit, btnText, btnWidth, projectDa
     })
       .then((data) => data.json())
       .then((newData) => {
-        setCategories(newData)
+        setCategories(newData);
       })
       .catch((error) => console.log(error));
   }, []);
-
-  function handleChange(e) {
-    setProject({ ...project, [e.target.name]: e.target.value });
-  }
-  
-  function handleCategory(e){
-    setProject({...project, 
-      category: {
-        id: e.target.value,
-        name: e.target.options[e.target.selectedIndex].text
-      }})
-  }
-
-  function submit(e) {
-    e.preventDefault();
-    handleSubmit(project);
-  }
 
   return (
     <form className={styles.form} onSubmit={submit}>
@@ -48,7 +35,7 @@ export default function ProjectForm({ handleSubmit, btnText, btnWidth, projectDa
         name={"name"}
         placeholder={"Enter your project name"}
         handleOnChange={handleChange}
-        value={project.name ? project.name : ''}
+        value={project.name ? project.name : ""}
       />
       <Input
         type={"number"}
@@ -56,16 +43,35 @@ export default function ProjectForm({ handleSubmit, btnText, btnWidth, projectDa
         name={"budget"}
         placeholder={"Enter the total budget"}
         handleOnChange={handleChange}
-        value={project.budget ? project.budget : ''}
+        value={project.budget ? project.budget : ""}
       />
       <Select
         name={"categoryId"}
         textLabel={"Select a category"}
         options={categories}
         handleOnChange={handleCategory}
-        value={project.category ? project.category.id : ''}
+        value={project.category ? project.category.id : ""}
       />
       <SubmitButton text={btnText} width={btnWidth} />
     </form>
   );
+
+  function handleChange(e) {
+    setProject({ ...project, [e.target.name]: e.target.value });
+  }
+
+  function handleCategory(e) {
+    setProject({
+      ...project,
+      category: {
+        id: e.target.value,
+        name: e.target.options[e.target.selectedIndex].text,
+      },
+    });
+  }
+
+  function submit(e) {
+    e.preventDefault();
+    handleSubmit(project);
+  }
 }
